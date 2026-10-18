@@ -1,10 +1,9 @@
 import React from 'react';
-import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0F0F12] text-white font-sans">
-      <AppRouter />
+    <div style={{ backgroundColor: '#0f0f12', color: 'white', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyCenter: 'center', fontSize: '24px', fontWeight: 'bold' }}>
+      🚀 Sociality App is Running!
     </div>
   );
 }
