@@ -25,7 +25,6 @@ const Login = () => {
 
     try {
       const data = await authService.login(formData);
-      // Assuming your API returns { token, user } or similar structure
       setAuth(data.token, data.user || { email: formData.email });
       navigate('/');
     } catch (err) {
@@ -39,9 +38,9 @@ const Login = () => {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#0f0f12] via-[#1a0b2e] to-[#0f0f12] px-4">
       <div className="w-full max-w-md rounded-2xl bg-[#121217]/80 p-8 shadow-2xl backdrop-blur-md border border-purple-900/30">
         
-        {/* Logo / Title */}
+        {/* Logo / Title - TES WARNA MERAH */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold tracking-tight text-white">Sociality</h1>
+          <h1 style={{ color: 'red' }} className="text-3xl font-bold tracking-tight">Sociality</h1>
           <p className="text-sm text-gray-400 mt-2">Welcome Back!</p>
         </div>
 
